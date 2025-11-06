@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab6</string>
+    <string name="default_web_client_id">700046102419-d0b15c28l2s2hngh5d9u3n7hkdaq157g.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">4161456897442958</string>
+    <string name="fb_login_protocol_scheme">fb4161456897442958</string>
+    <string name="facebook_client_token">7cbe3e69a51e7c0e6b28daa7f695742b</string>
+
+
+</resources>

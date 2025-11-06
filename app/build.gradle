@@ -1,0 +1,45 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.lab6'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.lab6"
+        minSdk 31
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation platform('com.google.firebase:firebase-bom:34.5.0')
+
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+
+
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.protobuf:protobuf-javalite:3.25.3'
+
+    // Necesario para resolver las clases que AnyChart busca
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'com.facebook.android:facebook-android-sdk:16.0.1'
+
+    // AnyChart pero excluyendo librerías antiguas
+    implementation ('com.github.AnyChart:AnyChart-Android:1.1.2') {
+        exclude group: 'com.android.support'
+    }
+}
