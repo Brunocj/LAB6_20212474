@@ -1,0 +1,1 @@
+CONSIDERACION: El login con facebook pedía "pubicar" la app, para lo cual era necesario cosas como URL de eliminación de datos lo cual lo volvió bastante complicado, si se hubiera podido publicar, funcionaría correctamente. De momento solo funciona si se agrega a un perfil como desarrollador
